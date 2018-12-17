@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 정보에 해당하는 LinearLayout 해당 부분은 추후 수정  ( 이미지와 내용 매칭되는 것으로 수정 시작 부분  )-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/weather1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/WImage1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_map" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/temperature1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Map View"
+                android:textColor="#adb3c0"
+                android:textSize="11.1dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weather2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/WImage2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_map" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/temperature2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Map View"
+                android:textColor="#adb3c0"
+                android:textSize="11.1dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weather3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/WImage3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_right" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/temperature3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Street View"
+                android:textColor="#adb3c0"
+                android:textSize="11.1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weather4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/WImage4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_crime" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/temperature4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Crime"
+                android:textColor="#adb3c0"
+                android:textSize="11.1dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/weather5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtDay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="12dp"
+                />
+
+            <ImageView
+                android:id="@+id/WImage5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_centered_lines" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/temperature5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="More"
+                android:textColor="#adb3c0"
+                android:textSize="11.1dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- 필요 없는 부분 (끝 부분)-->
+</LinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <customfonts.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/outdoorgames" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bottom_rect"
+                android:elevation="4dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:tag="sticky">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!-- 캠핑장 이름에 해당하는 부분  ( 현재는 가격 ) -->
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:id="@+id/showname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="Comming Soon"
+                        android:textColor="#606674"
+                        android:textSize="16dp" />
+                    <!-- 캠핑장 위치에 해당하는 정보 ( 현재는 위치 ) -->
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:id="@+id/showaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="Comming Soon"
+                        android:textColor="#adb3c0"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/weatherPager"
+                android:layout_width="match_parent"
+                android:layout_height="130dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="#fff"
+                android:orientation="vertical">
+                <!-- 정보 '1'  -->
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="상세 정보"
+                    android:textColor="#606674"
+                    android:textSize="16dp" />
+                <!-- 정보 '2' -->
+                <!-- 정보 1 -->
+                <customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/value1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:letterSpacing="0.025"
+                    android:text="상세설명1"
+                    android:textColor="#606674"
+                    android:textSize="12dp" />
+                <!-- 정보 2 -->
+                <customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/value2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:letterSpacing="0.025"
+                    android:text="상세설명2"
+                    android:textColor="#606674"
+                    android:textSize="12dp" />
+                <!-- 지도에 해당하는 부분 -->
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+                <!-- 오시는 길에 해당하는 정보가 들어가는 text -->
+                <customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/value3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:letterSpacing="0.025"
+                    android:text="상세설명3"
+                    android:textColor="#606674"
+                    android:textSize="12dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:isIndicator="false"
+                                    android:numStars="5"
+                                    android:progressTint="@color/wallet_holo_blue_light"
+                                    android:rating="3"
+                                    android:stepSize="0.5"
+                                    app:layout_constraintStart_toStartOf="parent"/>
+                                <customfonts.MyTextView_Roboto_Regular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text = "비밀번호"
+                                    android:textSize="10dp"
+                                    android:layout_marginRight="5dp"
+                                    app:layout_constraintRight_toLeftOf="@id/password"
+                                    />
+                                <customfonts.EditText_Roboto_Light
+                                    android:id="@+id/password"
+                                    android:layout_width="80dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rect_black"
+                                    android:ems="10"
+                                    android:inputType="textPassword"
+                                    android:paddingLeft="5dp"
+                                    android:maxLength="4"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <customfonts.EditText_Roboto_Light
+                                    android:id="@+id/editComment"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="8"
+                                    android:background="@drawable/rect_black"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="12dp" />
+
+                                <Button
+                                    android:id="@+id/btnWriteComment"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/round_rectangle_blue"
+                                    android:text="작성"
+                                    android:textColor="#fff"
+                                    android:textSize="11dp">
+
+                                </Button>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="10dp" />
+
+                        <customfonts.Button_Roboto_Medium
+                            android:id="@+id/btnShowAll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/round_rectangle"
+                            android:text="더보기" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </customfonts.StickyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <!-- 예약하기,전화하기 버튼 -->
+            <customfonts.Button_Roboto_Medium
+                android:id="@+id/reservation"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_rectangle"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="예약하기"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <customfonts.Button_Roboto_Medium
+                android:id="@+id/calling"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/round_rectangle_blue"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:onClick="calling"
+                android:padding="8dp"
+                android:text="전화하기"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
